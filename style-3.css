@@ -1,0 +1,93 @@
+/* Base styles for larger screens */
+body {
+  
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: blue;
+    font-size: 2rem;
+    margin-top: 20px;
+   margin-left: 80px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 15px auto;
+    width: 90%; /* Content width limited to improve readability */
+}
+
+a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+   margin-left: 80px;
+    
+}
+.s1{
+
+    background-color: rgb(231, 231, 224);
+}
+.s2{
+    background-color: palegreen;
+}
+.s3{
+    background-color: aqua;
+}
+.s4{
+    background-color: rgb(147, 49, 167);
+}
+.s5{
+    background-color: rgb(168, 54, 54);
+}
+.s6{
+    background-color: bisque;
+}
+
+/* Responsive design for medium screens (tablets) */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    a {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+}
+
+/* Responsive design for small screens (mobile phones) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        width: 95%;
+    }
+
+    a {
+        font-size: 16px;
+        padding: 6px 10px;
+        
+    }
+}
+
+/* Negative spacing adjustments for small screens */
+@media (max-width: 480px) {
+    body {
+        margin: -5px;
+    }
+
+    p {
+        margin-bottom: -10px;
+    }
+}

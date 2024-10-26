@@ -1,0 +1,97 @@
+/* Base styles for larger screens */
+body {
+    background-color:rgb(231, 231, 224);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+h2, h3 {
+    margin-left: 80px;
+    color: brown;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 15px auto;
+    width: 90%; /* Content width limited to improve readability */
+}
+
+a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 80px;
+   
+}
+
+/* Responsive design for medium screens (tablets) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 10px 15px;
+        margin: 5px 10px;
+    }
+
+    a {
+        font-size: 19px;
+        padding: 8px 12px;
+    }
+}
+
+/* Responsive design for small screens (mobile phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        margin: 5px 5px;
+    }
+
+    a {
+        font-size: 17px;
+        padding: 6px 10px;
+    }
+}
+
+/* Adjust negative spacing */
+@media (max-width: 480px) {
+    body {
+        margin: -5px;
+    }
+
+    p {
+        margin-bottom: -10px;
+    }
+}

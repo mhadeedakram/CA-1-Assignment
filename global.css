@@ -1,0 +1,100 @@
+/* Base styles for larger screens */
+body {
+   background-color: palegreen;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+a {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 10px;
+    color: green;
+    
+}
+
+
+
+/* Responsive design for medium screens (tablets) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: 18px;
+        padding: 8px 12px;
+        margin: 8px;
+    }
+}
+
+/* Responsive design for small screens (mobile phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    a {
+        font-size: 16px;
+        padding: 6px 10px;
+        margin: 5px;
+    }
+}
+
+/* Negative spacing adjustments for small screens */
+@media (max-width: 480px) {
+    body {
+        margin: -5px;
+    }
+
+    p {
+        margin-bottom: -10px;
+    }
+}
